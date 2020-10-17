@@ -6,10 +6,6 @@ source_catkin="source ~/catkin_ws/devel/setup.bash;"
 #change the model if you wanna use another model
 export_model="export TURTLEBOT3_MODEL=burger;"
 
-script_dir=$(dirname $(realpath $0))
-HSR_dir=$(dirname $script_dir)
-launch_dir=$HSR_dir/launch
-
 xterm -e  "
 $source_catkin 
 $export_model
@@ -19,7 +15,7 @@ sleep 5
 xterm -e "
 $source_catkin
 $export_model
-roslaunch home_service_robot view_navigation.launch;" &
+roslaunch home_service_robot view_navigation.launch config_file:=add_markers ;" &
 sleep 5
 
 xterm -e "
