@@ -31,5 +31,5 @@ sleep 10
 xterm -hold -e "
 $source_catkin
 $export_model
-rosrun pick_objects pick_objects_node;" &
+rosrun add_markers add_markers_node;" &
 sleep 5

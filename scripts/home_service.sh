@@ -28,8 +28,14 @@ $export_model
 roslaunch home_service_robot amcl_demo.launch;" &
 sleep 10
 
-xterm -hold -e "
+xterm -e "
 $source_catkin
 $export_model
 rosrun pick_objects pick_objects_node;" &
-sleep 5
+sleep 1
+
+xterm -e "
+$source_catkin
+$export_model
+rosrun add_markers add_markers_node;" &
+sleep 1

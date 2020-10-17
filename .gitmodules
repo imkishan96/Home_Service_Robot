@@ -13,3 +13,6 @@
 [submodule "pick_objects"]
 	path = pick_objects
 	url = https://github.com/imkishan96/pick_objects.git
+[submodule "add_markers"]
+	path = add_markers
+	url = https://github.com/imkishan96/add_markers.git
