@@ -1,7 +1,10 @@
 <launch>
-  <!-- Map server -->
-  <arg name="map_file" default="$(find home_service_robot)/../map/map1.yaml"/>
 
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="map_file" default="$(find home_service_robot)/../map/map1.yaml"/>
+  <arg name="move_forward_only" default="false"/>
+  
+  <!-- Map server -->
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
   <!-- Localization -->
@@ -17,5 +20,8 @@
   </include>
   
   <!-- Move base -->
- <include file="$(find turtlebot3_navigation)/launch/move_base.launch"/>
+   <include file="$(find turtlebot3_navigation)/launch/move_base.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="move_forward_only" value="$(arg move_forward_only)"/>
+  </include>
 </launch>

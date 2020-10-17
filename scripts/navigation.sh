@@ -21,14 +21,8 @@ $export_model
 roslaunch home_service_robot view_navigation.launch;" &
 sleep 5
 
-xterm -e  "
-$source_catkin 
+xterm -e "
+$source_catkin
 $export_model
-roslaunch home_service_robot gmapping_demo.launch" &
-sleep 5
-
-xterm -e  "
-$source_catkin 
-$export_model
-roslaunch home_service_robot keyboard_teleop.launch" &
+roslaunch home_service_robot amcl_demo.launch;" &
 sleep 5

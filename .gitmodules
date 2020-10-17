@@ -10,3 +10,6 @@
 [submodule "turtlebot3_msgs"]
 	path = turtlebot3_msgs
 	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+[submodule "pick_objects"]
+	path = pick_objects
+	url = https://github.com/imkishan96/pick_objects.git
