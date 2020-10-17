@@ -1,3 +1,4 @@
 <launch>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find home_service_robot)/../rvizconfig/add_markers.rviz"/>
+  <arg name="config_file" default="add_markers"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find home_service_robot)/../rvizconfig/$(arg config_file).rviz"/>
 </launch>

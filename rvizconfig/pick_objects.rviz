@@ -12,7 +12,7 @@ Panels:
         - /Local Map1/Costmap1
         - /Local Map1/Planner1
       Splitter Ratio: 0.5
-    Tree Height: 363
+    Tree Height: 798
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -319,25 +319,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 9.802752494812012
+      Distance: 11.46737003326416
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -5.7327494621276855
-        Y: -1.699610710144043
-        Z: -2.0265579223632812e-6
+        X: -5.5687174797058105
+        Y: -2.035454273223877
+        Z: -1.5497207641601562e-6
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.8403981924057007
+      Pitch: 1.010398030281067
       Target Frame: <Fixed Frame>
       Value: ThirdPersonFollower (rviz)
-      Yaw: 2.8154003620147705
+      Yaw: 3.080401659011841
     Saved: ~
 Window Geometry:
   Displays:
