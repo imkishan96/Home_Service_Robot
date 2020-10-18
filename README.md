@@ -27,7 +27,7 @@ go to scripts dir & turn scripts into executable with `chmod +x`
 ```
 roscd home_service_robot
 cd ../scripts
-chmod +x test_slam.sh navigation.sh pick_objects.sh add_markers.sh home_service.sh 
+chmod +x test_slam.sh test_navigation.sh pick_objects.sh add_markers.sh home_service.sh 
 ```
 ## Scripts
 
