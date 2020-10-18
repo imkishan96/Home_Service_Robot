@@ -3,14 +3,14 @@ This repository containes launch files, shell scrips and external ros packages t
 
 tested with ros melodic on ubuntu 18.04
 
-## clone
+## Clone
 use `--recursive` option while clonning to get other external repositories
 ```
 cd ~/catkin_ws/src
 git clone --recursive https://github.com/imkishan96/Home_Service_Robot.git
 
 ```
-## build
+## Build
 
 ```
 cd ..
@@ -18,7 +18,7 @@ catkin_make
 source devel/setup.bash
 ```
 
-## prepare
+## Prepare
 install xterminal if you don't have already
 ```
 sudo apt-get install xterm
