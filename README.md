@@ -48,13 +48,22 @@ This script will launch turtlebot3 in the gazebo world along with map_server, am
 ```
 ./test_navigation.sh
 ```
-
-
+use 2D nav goal from rviz and send goal for the robot. 
 ### pick_objects
-
+This script in addition to the test_navigation will launch the pick_objects node which will send multiple `2D NAV goal` locations to the navigation stack to simulate pick up and drop-off motion.
+```
+./pick_objects.sh
+```
 ### add_markers
-
+This script will publish markers on the rviz to simulate the virtual object being picked up from a location and dropped off after 5 sec to the dropoff zone
+```
+./add_markers.sh
+```
 ### home_service
+This final script will bring all together and simulate the robot picking up and droping off the virtual part while localizing and navigating through the world. 
+```
+./home_service.sh
+```
 
 ## debug
 
